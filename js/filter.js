@@ -40,20 +40,43 @@ function rangedGrayScaleOFF(){
     rangedHero[i].style.filter = "grayscale(0%)";
   }
 }
-// ATTACK TYPE
-function atackType(){
-  var n = 0;
-  if(document.getElementById("atackType").value == "Melee"){
-    turnOnGrayScale();
-    meleeGrayScaleOFF();
-  }
-  else if(document.getElementById("atackType").value == "Ranged"){
-    turnOnGrayScale();
-    rangedGrayScaleOFF();
-  }
-  else if(document.getElementById("atackType").value == "Filter"){
-    turnOffGrayScale();
-  }
+
+
+function strSelected(){
+  var str = document.getElementById("strSele");
+  var agi = document.getElementById("agiSele");
+  var int = document.getElementById("intSele");
+
+  str.style.background = "#f9f9f9";
+  str.style.color = "#222222";
+  agi.style.background = "#222222";
+  agi.style.color = "#f9f9f9";
+  int.style.background = "#222222";
+  int.style.color = "#f9f9f9";
+}
+function agiSelected(){
+  var str = document.getElementById("strSele");
+  var agi = document.getElementById("agiSele");
+  var int = document.getElementById("intSele");
+
+  str.style.background = "#222222";
+  str.style.color = "#f9f9f9";
+  agi.style.background = "#f9f9f9";
+  agi.style.color = "#222222";
+  int.style.background = "#222222";
+  int.style.color = "#f9f9f9";
+}
+function intSelected(){
+  var str = document.getElementById("strSele");
+  var agi = document.getElementById("agiSele");
+  var int = document.getElementById("intSele");
+
+  str.style.background = "#222222";
+  str.style.color = "#f9f9f9";
+  agi.style.background = "#222222";
+  agi.style.color = "#f9f9f9";
+  int.style.background = "#f9f9f9";
+  int.style.color = "#222222";
 }
 
 function bothSelected(){

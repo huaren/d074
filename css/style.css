@@ -55,10 +55,22 @@ img{
   margin: 5px;
   box-shadow: 1px 1px 2px #5c5c5c;
 }
-
+.hero a{
+  text-decoration: none;
+}
+.hero p{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 #strSele,#bothSele{
   background: #f9f9f9;
   color: #222;
+}
+
+.hide{
+  display: none;
 }
 
 @media screen and (max-width: 800px){
