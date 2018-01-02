@@ -1,0 +1,73 @@
+body{
+  background: #fff;
+}
+.tab{
+  background: #222;
+  padding: 10px;
+  margin: 0 5px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.filter{
+  background: #222;
+  color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.tablinks{
+  background: #222;
+  color: #f9f9f9;
+  width: 33.3333%;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+.filterlink{
+  text-align: center;
+  width: 100%;
+  background: #222;
+  color: #c2c2c2;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+img{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.container {
+  width: 99%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.str-hero, .agi-hero, .int-hero{
+  display: grid;
+  grid-template-columns: repeat(15,1fr);
+}
+.hero{
+  background: #222;
+  margin: 5px;
+  box-shadow: 1px 1px 2px #5c5c5c;
+}
+
+#strSele,#bothSele{
+  background: #f9f9f9;
+  color: #222;
+}
+
+@media screen and (max-width: 800px){
+  .str-hero, .agi-hero, .int-hero{
+    grid-template-columns: repeat(10,1fr);
+  }
+}
+@media screen and (max-width: 600px){
+  .str-hero, .agi-hero, .int-hero{
+    grid-template-columns: repeat(5,1fr);
+  }
+}
